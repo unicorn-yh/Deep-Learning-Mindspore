@@ -1,0 +1,32 @@
+def parse_args():
+    parser = argparse.ArgumentParser()
+    
+    # 工程文件名字
+    parser.add_argument("--name", default="resnet50_classify", help="The name of project.")
+    # 数据集名称
+    parser.add_argument('--dataset', default='Canidae', help='dataset name')
+    parser.add_argument("--epochs", default=200, type=int, metavar='N')
+    parser.add_argument('--batch_size', default=16, type=int, metavar='N')
+
+    # 预训练权重，参数填预训练文件的路径
+    parser.add_argument('--pre_ckpt', default="./pre_ckpt/resnet50.ckpt")
+    # 是否删除预训练模型的全连接层
+    parser.add_argument("--delfc_flag", default=True)
+    
+    # 输入图片的channels，默认是RGB三通道图片
+    parser.add_argument('--input_channels', default=3, type=int, help='input channels')
+    # 类别个数
+    parser.add_argument('--num_classes', default=20, type=int, help='number of classes')
+    # 输入图像的尺寸
+    parser.add_argument('--image_size', default=128, type=int, help='image size')
+
+    # 优化器
+    parser.add_argument('--optimizer', default='Adam')
+    # 损失函数
+    parser.add_argument('--loss', default='SoftmaxCrossEntropyWithLogits')
+    
+    parser.add_argument('--dataset_sink_mode', default=False)
+
+
+    config = parser.parse_args()
+    return config
