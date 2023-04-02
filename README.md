@@ -9,6 +9,12 @@
 
 # 1. 汽车里程数预测 Car Mileage Prediction
 
+![image-20230402175403489](README\image-20230402175403489.png)
+
+<h4 align="center">Fig. 1: Train dataset display</h4>
+
+<br>
+
 ## Aim
 
 The main content of this project is to predict the fuel consumption mileage of the car. The frameworks used mainly include: MindSpore1.3, which is mainly used for the construction of deep learning algorithms, based on the open source auto-mpg data set, based on MindSpore1.3 deep learning The library applies a fully-connected neural network for vehicle mileage prediction. The main focus of this experiment is to distinguish the difference in network structure between classification tasks and regression tasks.
@@ -33,7 +39,7 @@ The main content of this project is to predict the fuel consumption mileage of t
 
 <p> <img src="README/image-20230402165544961.png"> </p>
 
-<h4 align="center">Fig. 1: Train dataset after discrete feature processing </h4>
+<h4 align="center">Fig. 2: Train dataset after discrete feature processing </h4>
 
 <br>
 
@@ -41,7 +47,7 @@ The main content of this project is to predict the fuel consumption mileage of t
 
 ![image-20230402165936825](README/image-20230402165936825.png)
 
-<h4 align="center">Fig. 2: Visualize the correlation of data items in train dataset</h4>
+<h4 align="center">Fig. 3: Visualize the correlation of data items in train dataset</h4>
 
 <br>
 
@@ -82,6 +88,8 @@ This project emphasized the usage of the MindSpore1.3 framework of Huawei Cloud 
 | Flower Photos Classification: Tulips 郁金香 | ![image-20230402174855978](README/image-20230402174855978.png) |
 | :-----------------------------------------: | ------------------------------------------------------------ |
 
+<h4 align="center">Fig. 4: Tulips</h4>
+
 <br>
 
 ## Aim
@@ -106,7 +114,7 @@ This experiment is a flower recognition experiment based on ordinary convolution
 
 ![image-20230402172354325](README/image-20230402172354325.png)
 
-<h4 align="center">Fig. 3: ResNet-50 architecture</h4>
+<h4 align="center">Fig. 5: ResNet-50 architecture</h4>
 
 <br>
 
