@@ -1,4 +1,4 @@
-# Deep-Learning-Exp
+# Deep-Learning-Mindspore
  基于华为云平台的 MindSpore1.3 框架的回归任务和图像分类任务（汽车里程数预测 / 花卉图像分类）
  
  Regression tasks and image classification tasks based on the MindSpore1.3 framework of Huawei Cloud Platform (Car mileage prediction / Flower image classification)
