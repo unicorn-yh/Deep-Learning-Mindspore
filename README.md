@@ -1,8 +1,8 @@
 # Deep-Learning-Mindspore
  基于华为云平台的 MindSpore1.3 框架的回归任务和图像分类任务（汽车里程数预测 / 花卉图像分类）
- 
+
  Regression tasks and image classification tasks based on the MindSpore1.3 framework of Huawei Cloud Platform (Car mileage prediction / Flower image classification)
- 
+
  华为云平台（Huawei Cloud Platform）: https://www.huaweicloud.com/
 
 <br>
@@ -78,6 +78,9 @@ This project emphasized the usage of the MindSpore1.3 framework of Huawei Cloud 
 
 
 # 2. 花卉图像分类 Flower Photos Classification
+
+| Flower Photos Classification: Tulips 郁金香 | ![image-20230402174855978](README\image-20230402174855978.png) |
+| :-------------------------------------------: | ------------------------------------------------------------ |
 
 <br>
 
