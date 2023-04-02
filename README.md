@@ -9,7 +9,7 @@
 
 # 1. 汽车里程数预测 Car Mileage Prediction
 
-![image-20230402175403489](README\image-20230402175403489.png)
+![image-20230402175403489](README/image-20230402175403489.png)
 
 <h4 align="center">Fig. 1: Train dataset display</h4>
 
