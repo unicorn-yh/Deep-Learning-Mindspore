@@ -33,6 +33,8 @@ The main content of this project is to predict the fuel consumption mileage of t
 
 <br>
 
+<br>
+
 ![image-20230402165936825](README/image-20230402165936825.png)
 
 <h4 align="center">Fig. 2: Visualize the correlation of data items in train dataset</h4>
@@ -58,6 +60,8 @@ The main content of this project is to predict the fuel consumption mileage of t
 | MSE loss function | ![image-20230402170423622](README/image-20230402170423622.png) |
 
 <h4 align="center">Table 2: Loss function graph</h4>
+
+<br>
 
 It can be seen from Table 2, the model's MAE and MSE began to converge when the number of iterations reached 400, and showed a gentle trend until the follow-up. 
 
@@ -97,6 +101,8 @@ This experiment is a flower recognition experiment based on ordinary convolution
 
 <h4 align="center">Fig. 3: ResNet-50 architecture</h4>
 
+<br>
+
 Analyzing from left to right, the leftmost part of Figure 6 is the step diagram of ResNet-50, which includes the convolution block (conv_block) and standard block (identity_block) modules that deepen the network depth, avoiding training calculation difficulties and network degradation. question. MindSpore has launched to support this model, so we can directly call the interface of this model, and pass in the defined hyperparameters and data when using the model.
 
 <br>
@@ -105,9 +111,11 @@ Analyzing from left to right, the leftmost part of Figure 6 is the step diagram 
 
 | CNN                                                          | ResNet-50                                                    |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| ![image-20230331003437730](D:\Project\Deep-Learning-Exp\README\image-20230331003437730.png) | ![image-20230331003151291](D:\Project\Deep-Learning-Exp\README\image-20230331003151291.png) |
+| ![image-20230331003437730](README/image-20230331003437730.png) | ![image-20230331003151291](README/image-20230331003151291.png) |
 
 <h4 align="center">Table 3: ResNet-50 architecture</h4>
+
+<br>
 
 From the training results in Table 3, it can be seen that the model trained by the ResNet-50 network achieved an accuracy rate of 0.98 in the flower classification task, while the model trained by a normal CNN network achieved an accuracy rate of 0.78. The epoch of both models is set to 600, and the final loss of the ResNet-50 network reaches 0.24, while the loss of the ordinary CNN network is 0.79.
 
