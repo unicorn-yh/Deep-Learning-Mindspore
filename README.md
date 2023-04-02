@@ -79,8 +79,8 @@ This project emphasized the usage of the MindSpore1.3 framework of Huawei Cloud 
 
 # 2. 花卉图像分类 Flower Photos Classification
 
-| Flower Photos Classification: Tulips 郁金香 | ![image-20230402174855978](README\image-20230402174855978.png) |
-| :-------------------------------------------: | ------------------------------------------------------------ |
+| Flower Photos Classification: Tulips 郁金香 | ![image-20230402174855978](README/image-20230402174855978.png) |
+| :-----------------------------------------: | ------------------------------------------------------------ |
 
 <br>
 
