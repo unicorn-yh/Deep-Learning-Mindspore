@@ -1,5 +1,9 @@
 # Deep-Learning-Exp
- 汽车里程数预测 / 花卉图像分类
+ 基于华为云平台的 MindSpore1.3 框架的回归任务和图像分类任务（汽车里程数预测 / 花卉图像分类）
+ 
+ Regression tasks and image classification tasks based on the MindSpore1.3 framework of Huawei Cloud Platform (Car mileage prediction / Flower image classification)
+ 
+ 华为云平台（Huawei Cloud Platform）: https://www.huaweicloud.com/
 
 <br>
 
@@ -104,6 +108,12 @@ This experiment is a flower recognition experiment based on ordinary convolution
 <br>
 
 Analyzing from left to right, the leftmost part of Figure 6 is the step diagram of ResNet-50, which includes the convolution block (conv_block) and standard block (identity_block) modules that deepen the network depth, avoiding training calculation difficulties and network degradation. question. MindSpore has launched to support this model, so we can directly call the interface of this model, and pass in the defined hyperparameters and data when using the model.
+
+<br>
+
+Model we used: ***ResNet-50***
+
+Source: https://gitee.com/mindspore/mindspore/blob/r1.0/model_zoo/official/cv/resnet/src/resnet.py#
 
 <br>
 
