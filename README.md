@@ -1,9 +1,19 @@
-# Deep-Learning-Exp
- 汽车里程数预测 / 花卉图像分类
+# Deep-Learning-Mindspore
+ 基于华为云平台的 MindSpore1.3 框架的回归任务和图像分类任务（汽车里程数预测 / 花卉图像分类）
+
+ Regression tasks and image classification tasks based on the MindSpore1.3 framework of Huawei Cloud Platform (Car mileage prediction / Flower image classification)
+
+ 华为云平台（Huawei Cloud Platform）: https://www.huaweicloud.com/
 
 <br>
 
 # 1. 汽车里程数预测 Car Mileage Prediction
+
+![image-20230402175403489](README/image-20230402175403489.png)
+
+<h4 align="center">Fig. 1: Train dataset display</h4>
+
+<br>
 
 ## Aim
 
@@ -29,13 +39,15 @@ The main content of this project is to predict the fuel consumption mileage of t
 
 <p> <img src="README/image-20230402165544961.png"> </p>
 
-<h4 align="center">Fig. 1: Train dataset after discrete feature processing </h4>
+<h4 align="center">Fig. 2: Train dataset after discrete feature processing </h4>
+
+<br>
 
 <br>
 
 ![image-20230402165936825](README/image-20230402165936825.png)
 
-<h4 align="center">Fig. 2: Visualize the correlation of data items in train dataset</h4>
+<h4 align="center">Fig. 3: Visualize the correlation of data items in train dataset</h4>
 
 <br>
 
@@ -59,6 +71,8 @@ The main content of this project is to predict the fuel consumption mileage of t
 
 <h4 align="center">Table 2: Loss function graph</h4>
 
+<br>
+
 It can be seen from Table 2, the model's MAE and MSE began to converge when the number of iterations reached 400, and showed a gentle trend until the follow-up. 
 
 This project emphasized the usage of the MindSpore1.3 framework of Huawei Cloud Platform and its deep learning library to realize the regression prediction of car mileage based on the fully connected neural network. The experiment uses MAE and MSE loss functions to evaluate the performance of the regression task of the model, and from the above experimental results and analysis, it can be seen that after the model reaches a certain number of iterations, the loss value gradually converges to a fixed value, realizing the regression task.
@@ -70,6 +84,11 @@ This project emphasized the usage of the MindSpore1.3 framework of Huawei Cloud 
 
 
 # 2. 花卉图像分类 Flower Photos Classification
+
+| Flower Photos Classification: Tulips 郁金香 | ![image-20230402174855978](README/image-20230402174855978.png) |
+| :-----------------------------------------: | ------------------------------------------------------------ |
+
+<h4 align="center">Fig. 4: Tulips</h4>
 
 <br>
 
@@ -95,9 +114,17 @@ This experiment is a flower recognition experiment based on ordinary convolution
 
 ![image-20230402172354325](README/image-20230402172354325.png)
 
-<h4 align="center">Fig. 3: ResNet-50 architecture</h4>
+<h4 align="center">Fig. 5: ResNet-50 architecture</h4>
+
+<br>
 
 Analyzing from left to right, the leftmost part of Figure 6 is the step diagram of ResNet-50, which includes the convolution block (conv_block) and standard block (identity_block) modules that deepen the network depth, avoiding training calculation difficulties and network degradation. question. MindSpore has launched to support this model, so we can directly call the interface of this model, and pass in the defined hyperparameters and data when using the model.
+
+<br>
+
+Model we used: ***ResNet-50***
+
+Source: https://gitee.com/mindspore/mindspore/blob/r1.0/model_zoo/official/cv/resnet/src/resnet.py#
 
 <br>
 
@@ -105,9 +132,11 @@ Analyzing from left to right, the leftmost part of Figure 6 is the step diagram 
 
 | CNN                                                          | ResNet-50                                                    |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| ![image-20230331003437730](D:\Project\Deep-Learning-Exp\README\image-20230331003437730.png) | ![image-20230331003151291](D:\Project\Deep-Learning-Exp\README\image-20230331003151291.png) |
+| ![image-20230331003437730](README/image-20230331003437730.png) | ![image-20230331003151291](README/image-20230331003151291.png) |
 
 <h4 align="center">Table 3: ResNet-50 architecture</h4>
+
+<br>
 
 From the training results in Table 3, it can be seen that the model trained by the ResNet-50 network achieved an accuracy rate of 0.98 in the flower classification task, while the model trained by a normal CNN network achieved an accuracy rate of 0.78. The epoch of both models is set to 600, and the final loss of the ResNet-50 network reaches 0.24, while the loss of the ordinary CNN network is 0.79.
 
