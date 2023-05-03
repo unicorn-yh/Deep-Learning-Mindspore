@@ -149,3 +149,7 @@ ResNet is divided into 18 layers, 34 layers, 50 layers, 101 layers, 110 layers, 
 ## Personal Summary
 
 This project emphasized the usage of the MindSpore1.3 framework of Huawei Cloud Platform and its deep learning library to realize flower image classification based on ResNet-50 staggered network. From the above experimental results, it can be seen that the model trained by the ResNet network performs significantly better than ordinary CNN, and is better than ordinary CNN in terms of accuracy and loss. This stems from the fact that the former adjusts the input layer in batch normalization to solve the problem of covariate shift, and overcomes the problem of gradient disappearance, and keeps low error rate and loss in deeper networks, so its performance is better than shallow network.
+
+<br>
+
+# 3. 
