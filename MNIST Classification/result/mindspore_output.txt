@@ -1,0 +1,52 @@
+=================== Gradient-Descent ==================
+epoch:0, train acc:0.8108, loss:0.0091, test acc:0.9535
+epoch:1, train acc:0.9600, loss:0.0021, test acc:0.9677
+epoch:2, train acc:0.9749, loss:0.0013, test acc:0.9737
+epoch:3, train acc:0.9823, loss:0.0009, test acc:0.9745
+epoch:4, train acc:0.9862, loss:0.0007, test acc:0.9779
+epoch:5, train acc:0.9890, loss:0.0005, test acc:0.9792
+epoch:6, train acc:0.9922, loss:0.0004, test acc:0.9765
+epoch:7, train acc:0.9938, loss:0.0003, test acc:0.9818
+epoch:8, train acc:0.9959, loss:0.0002, test acc:0.9808
+epoch:9, train acc:0.9971, loss:0.0002, test acc:0.9812
+
+
+========================= SGD =========================
+epoch:0, train acc:0.3411, loss:0.0327, test acc:0.6405
+epoch:1, train acc:0.8113, loss:0.0099, test acc:0.8744
+epoch:2, train acc:0.8868, loss:0.0061, test acc:0.9020
+epoch:3, train acc:0.9068, loss:0.0050, test acc:0.9174
+epoch:4, train acc:0.9202, loss:0.0043, test acc:0.9276
+epoch:5, train acc:0.9331, loss:0.0037, test acc:0.9366
+epoch:6, train acc:0.9409, loss:0.0032, test acc:0.9460
+epoch:7, train acc:0.9488, loss:0.0028, test acc:0.9512
+epoch:8, train acc:0.9550, loss:0.0025, test acc:0.9558
+epoch:9, train acc:0.9593, loss:0.0022, test acc:0.9572
+
+
+======================= RMSProp =======================
+epoch:0, train acc:0.8252, loss:0.0092, test acc:0.9277
+epoch:1, train acc:0.9302, loss:0.0053, test acc:0.9095
+epoch:2, train acc:0.9330, loss:0.0054, test acc:0.9291
+epoch:3, train acc:0.9270, loss:0.0060, test acc:0.9431
+epoch:4, train acc:0.9211, loss:0.0064, test acc:0.9195
+epoch:5, train acc:0.9152, loss:0.0073, test acc:0.8791
+epoch:6, train acc:0.9057, loss:0.0079, test acc:0.9019
+epoch:7, train acc:0.9007, loss:0.0083, test acc:0.9309
+epoch:8, train acc:0.8902, loss:0.0089, test acc:0.8780
+epoch:9, train acc:0.8803, loss:0.0093, test acc:0.9083
+
+
+========================= Adam ========================
+epoch:0, train acc:0.9148, loss:0.0046, test acc:0.9459
+epoch:1, train acc:0.9477, loss:0.0031, test acc:0.9477
+epoch:2, train acc:0.9553, loss:0.0027, test acc:0.9601
+epoch:3, train acc:0.9602, loss:0.0024, test acc:0.9557
+epoch:4, train acc:0.9640, loss:0.0022, test acc:0.9610
+epoch:5, train acc:0.9654, loss:0.0023, test acc:0.9672
+epoch:6, train acc:0.9656, loss:0.0022, test acc:0.9550
+epoch:7, train acc:0.9685, loss:0.0020, test acc:0.9666
+epoch:8, train acc:0.9699, loss:0.0019, test acc:0.9651
+epoch:9, train acc:0.9727, loss:0.0018, test acc:0.9692
+
+
