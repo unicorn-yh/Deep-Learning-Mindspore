@@ -1,5 +1,5 @@
 # Deep-Learning-Mindspore
- 基于华为云平台的 MindSpore1.3 框架的回归任务和图像分类任务（汽车里程数预测 / 花卉图像分类）
+ 基于华为云平台的 MindSpore1.3 框架的回归任务和图像分类任务（汽车里程数预测 / 花卉图像分类/基于MNIST全连接网络分类的梯度下降/汽车聚类分析）
 
  Regression tasks and image classification tasks based on the MindSpore1.3 framework of Huawei Cloud Platform (Car mileage prediction / Flower image classification)
 
@@ -175,7 +175,46 @@ This project emphasized the usage of the MindSpore1.3 framework of Huawei Cloud 
 
 <br>
 
-|                                                              |                                                              |                                                              |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![image-20230504120617786](README/image-20230504120617786.png) | ![image-20230504120631623](README\image-20230504120631623.png) | ![image-20230504120645321](README\image-20230504120645321.png) |
+# 4. 汽车聚类分析 Car Clustering Analysis
+
+<br>
+
+## Result
+
+K-Means 和 K-Mediods 对比：
+
+| K-Means                                                      | K-Mediods                                                    |
+| :----------------------------------------------------------: | :------------------------------------------------------------: |
+| ![image-20230511173029614](README/image-20230511173029614.png) | ![image-20230511173012045](README/image-20230511173012045.png) |
+
+<br>
+
+Agglomerative Clustering 对比：
+
+| **Single Linkage** | **![image-20230511173203047](README\image-20230511173203047.png)** |
+| :--------------------: | ------------------------------------------------------------ |
+| **Complete Linkage** | **![image-20230511173213021](README/image-20230511173213021.png)** |
+| **Average Linkage**  | ![image-20230511173224630](README/image-20230511173224630.png) |
+
+<br>
+
+聚类评价指标：
+
+|   聚类方法   |                           评价指标                           |
+| :----------: | :----------------------------------------------------------: |
+|   K-Means    | <img src="README/image-20230511185921466.png" alt="image-20230511185921466" style="zoom:70%;" /> |
+|  K-Mediods   | <img src="README/image-20230511185945085.png" alt="image-20230511185945085" style="zoom:70%;" /> |
+|  AHC 单连接  | <img src="README/image-20230511190153952.png" alt="image-20230511190153952" style="zoom: 70%;" /> |
+|  AHC 全连接  | <img src="README\image-20230511190207614.png" alt="image-20230511190207614" style="zoom: 70%;" /> |
+| AHC 平均连接 | <img src="README/image-20230511190323572.png" alt="image-20230511190323572" style="zoom: 70%;" /> |
+
+<br>
+
+汽车产品聚类分析
+
+| K-Means                                                      |
+| :------------------------------------------------------------: |
+| ![image-20230511191247229](README/image-20230511191247229.png) |
+| **K-Mediods**                                                |
+| ![image-20230511191220650](README/image-20230511191220650.png) |
 
