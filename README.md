@@ -1,7 +1,7 @@
 # Deep-Learning-Mindspore
- 基于华为云平台的 MindSpore1.3 框架的回归任务和图像分类任务（汽车里程数预测 / 花卉图像分类/基于MNIST全连接网络分类的梯度下降/汽车聚类分析）
+ 基于华为云平台的 MindSpore1.3 框架的回归任务和图像分类任务（汽车里程数预测 / 花卉图像分类 / 基于MNIST全连接网络分类的梯度下降 / 汽车产品聚类分析 / 共享单车租车量预测）
 
- Regression tasks and image classification tasks based on the MindSpore1.3 framework of Huawei Cloud Platform (Car mileage prediction / Flower image classification)
+ Regression tasks and image classification tasks based on the MindSpore1.3 framework of Huawei Cloud Platform (Car mileage prediction / Flower image classification / Gradient Descent in FCN based on MNIST / Car clustering analysis / Bike sharing prediction )
 
  华为云平台（Huawei Cloud Platform）: https://www.huaweicloud.com/
 
@@ -158,24 +158,50 @@ This project emphasized the usage of the MindSpore1.3 framework of Huawei Cloud 
 
 ## Result
 
-| 模型优化器           | 训练集准确率 | 测试集准确率 | 损失   |
+| Model Optimizer | Train Accuracy | Test Accuracy | Loss |
 | :-------------------: | :------------: | :------------: | :------: |
 | **Gradient Descent** | 0.9971       | 0.9812       | 0.0002 |
 | **SGD**              | 0.9593       | 0.9572       | 0.0022 |
 | **RMSProp**          | 0.8803       | 0.9083       | 0.0093 |
 | **Adam**             | 0.9727       | 0.9692       | 0.0018 |
 
+<h4 align="center">Table 4: Result of different optimizers upon FCN</h4>
+
 <br>
 
-| 性能指标     | 图表                                                         |
-| :----------: | :------------------------------------------------------------: |
+|   性能指标   |                             图表                             |
+| :----------: | :----------------------------------------------------------: |
 | 训练集准确率 | ![image-20230504120617786](README/image-20230504120617786.png) |
-| 测试集准确率 | ![image-20230504120631623](README\image-20230504120631623.png) |
-| 损失         | ![image-20230504120645321](README\image-20230504120645321.png) |
+| 测试集准确率 | ![image-20230504120631623](README/image-20230504120631623.png) |
+|     损失     | ![image-20230504120645321](README/image-20230504120645321.png) |
+
+<h4 align="center">Table 5: Visualizing result</h4>
 
 <br>
 
 # 4. 汽车聚类分析 Car Clustering Analysis
+
+![image-20230516135200920](README/image-20230516135200920.png)
+
+<h4 align="center">Fig. 6: Car Product Dataset</h4>
+
+***Source:** https://www.kaggle.com/datasets/ngawangchoeda/car-price-dataset?resource=download*
+
+<br>
+
+## Data Preprocessing
+
+| No   | 数据预处理步骤                                               | 结果                                                         |
+| :----: | :------------------------------------------------------------: | :------------------------------------------------------------: |
+| 1    | 分析非数值型数据 Analyzing non-numeric data                  | ![image-20230516135541715](README/image-20230516135541715.png) |
+| 2    | 修改品牌名称的不规则命名 Modifying the irregular naming of the brand name | ![image-20230516135729394](README/image-20230516135729394.png) |
+| 3    | 根据德国标准将汽车大小分为6类 Classification of car sizes into 6 classes according to German standards | ![image-20230516140248416](README/image-20230516140248416.png) |
+| 4    | 剔除相关性高的变量 Eliminating highly correlated variables   | ![image-20230516140345556](README/image-20230516140345556.png) |
+| 5    | 对离散型特征使用 One-Hot 编码                                | ![image-20230516140552189](README/image-20230516140552189.png) |
+| 6    | 归一化数据集                                                 | ![image-20230516140729184](README/image-20230516140729184.png) |
+| 7    | 利用 PCA 对高维数据进行降维                                  | <img src="README/image-20230516140921816.png" alt="image-20230516140921816" style="zoom:67%;" /> |
+
+<h4 align="center">Table 6: Data Preprocessing</h4>
 
 <br>
 
@@ -183,18 +209,22 @@ This project emphasized the usage of the MindSpore1.3 framework of Huawei Cloud 
 
 K-Means 和 K-Mediods 对比：
 
-| K-Means                                                      | K-Mediods                                                    |
-| :----------------------------------------------------------: | :------------------------------------------------------------: |
+|                           K-Means                            |                          K-Mediods                           |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
 | ![image-20230511173029614](README/image-20230511173029614.png) | ![image-20230511173012045](README/image-20230511173012045.png) |
+
+<h4 align="center">Table 7: Comparison between K-Means and K-Mediods</h4>
 
 <br>
 
 Agglomerative Clustering 对比：
 
-| **Single Linkage** | **![image-20230511173203047](README\image-20230511173203047.png)** |
+| **Single Linkage** | **![image-20230511173203047](README/image-20230511173203047.png)** |
 | :--------------------: | ------------------------------------------------------------ |
 | **Complete Linkage** | **![image-20230511173213021](README/image-20230511173213021.png)** |
 | **Average Linkage**  | ![image-20230511173224630](README/image-20230511173224630.png) |
+
+<h4 align="center">Table 8: Comparison between different linkages of AHC</h4>
 
 <br>
 
@@ -208,6 +238,8 @@ Agglomerative Clustering 对比：
 |  AHC 全连接  | <img src="README\image-20230511190207614.png" alt="image-20230511190207614" style="zoom: 70%;" /> |
 | AHC 平均连接 | <img src="README/image-20230511190323572.png" alt="image-20230511190323572" style="zoom: 70%;" /> |
 
+<h4 align="center">Table 9: Comparison between evaluation index of different clustering methods</h4>
+
 <br>
 
 汽车产品聚类分析
@@ -218,3 +250,64 @@ Agglomerative Clustering 对比：
 | **K-Mediods**                                                |
 | ![image-20230511191220650](README/image-20230511191220650.png) |
 
+<h4 align="center">Table 10: Comparison of product analysis between K-Means and K-Mediods</h4>
+
+<br>
+
+信息熵的值越大，说明聚类效果越好，反之则说明聚类效果越差。戴维森堡丁指数（Davies-Bouldin Index）用类样本点到其距离中心的距离估计内类不是内的紧致性，用聚类中心之间的距离表示类内间的分离性。戴维森堡丁指数越小意味着类内距离越小，同时类间距离越大。轮廓系数的值越大，说明聚类效果越好；不去当值为负数时，说明聚类效果很差。
+
+从表3的评价指标来看可看出K-Means聚类，综合而言会比K-Mediods聚类和AHC层次聚类的效果更好。相比之下，K-Means的信息熵更大，分类效果更明显；K-Means的戴维森堡丁指数更小，意味着簇内距离更小，以及簇间距离更大；K-Means的轮廓系数较大，越趋近于1代表内聚度和分离度都相对较优。
+
+<br>
+
+# 5. 共享单车租车量预测 Bike Sharing Prediction
+
+![image-20230516142913347](README/image-20230516142913347.png)
+
+<h4 align="center">Fig. 7: Bike Sharing Dataset</h4>
+
+Bike sharing dataset in UCI database (csv format):
+
+***Source:** http://archive.ics.uci.edu/ml/datasets/Bike+Sharing+Dataset*
+
+Main content: ![image-20230516143246323](README/image-20230516143246323.png)
+
+<br>
+
+## Data Preprocessing
+
+| No   | 数据预处理                                                   | 结果                                                         |
+| :----: | :------------------------------------------------------------: | :------------------------------------------------------------: |
+| 1    | 对数值数据进行归一化 Normalizing numeric data                | ![image-20230516144600633](README/image-20230516144600633.png) |
+| 2    | 对非数值数据进行 One-Hot 编码 One-Hot encoding of non-numeric data | ![image-20230516144653143](README/image-20230516144653143.png) |
+
+<h4 align="center">Table 11: Data Preprocessing</h4>
+
+<br>
+
+## Experimental Design
+
+We used Linear Regression network as model to train the dataset, calculating MSE and MAE after 400 epochs of training. We used RMSProp as net optimizer, with learning rate of 0.001, to train the net parameters.
+
+<br>
+
+## Result
+
+|                **Hour** *(based on hour.csv)*                |
+| :----------------------------------------------------------: |
+| **![image-20230516145141746](README/image-20230516145141746.png)** |
+|                 **Day *(based on day.csv)***                 |
+| ![image-20230516145204301](README/image-20230516145204301.png) |
+
+<h4 align="center">Table 12: Result display</h4>
+
+<br>
+
+|      | MAE                                                          | MSE                                                          |
+| :----: | :------------------------------------------------------------: | :------------------------------------------------------------: |
+| Hour | ![image-20230517101538745](README/image-20230517101538745.png) | ![image-20230517101554855](README/image-20230517101554855.png) |
+| Day  | ![image-20230517101513354](README/image-20230517101513354.png) | ![image-20230517101438669](README/image-20230517101438669.png) |
+
+<h4 align="center">Table 13: Visualizing MAE and MSE graph</h4>
+
+<br>
