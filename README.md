@@ -1,5 +1,5 @@
 # Deep-Learning-Mindspore
- 基于华为云平台的 MindSpore1.3 框架的回归任务和图像分类任务（汽车里程数预测 / 花卉图像分类）
+ 基于华为云平台的 MindSpore1.3 框架的回归任务和图像分类任务（汽车里程数预测 / 花卉图像分类/基于MNIST全连接网络分类的梯度下降/汽车聚类分析）
 
  Regression tasks and image classification tasks based on the MindSpore1.3 framework of Huawei Cloud Platform (Car mileage prediction / Flower image classification)
 
@@ -149,3 +149,72 @@ ResNet is divided into 18 layers, 34 layers, 50 layers, 101 layers, 110 layers, 
 ## Personal Summary
 
 This project emphasized the usage of the MindSpore1.3 framework of Huawei Cloud Platform and its deep learning library to realize flower image classification based on ResNet-50 staggered network. From the above experimental results, it can be seen that the model trained by the ResNet network performs significantly better than ordinary CNN, and is better than ordinary CNN in terms of accuracy and loss. This stems from the fact that the former adjusts the input layer in batch normalization to solve the problem of covariate shift, and overcomes the problem of gradient disappearance, and keeps low error rate and loss in deeper networks, so its performance is better than shallow network.
+
+<br>
+
+# 3. 基于MNIST全连接网络分类的梯度下降
+
+<br>
+
+## Result
+
+| 模型优化器           | 训练集准确率 | 测试集准确率 | 损失   |
+| :-------------------: | :------------: | :------------: | :------: |
+| **Gradient Descent** | 0.9971       | 0.9812       | 0.0002 |
+| **SGD**              | 0.9593       | 0.9572       | 0.0022 |
+| **RMSProp**          | 0.8803       | 0.9083       | 0.0093 |
+| **Adam**             | 0.9727       | 0.9692       | 0.0018 |
+
+<br>
+
+| 性能指标     | 图表                                                         |
+| :----------: | :------------------------------------------------------------: |
+| 训练集准确率 | ![image-20230504120617786](README/image-20230504120617786.png) |
+| 测试集准确率 | ![image-20230504120631623](README\image-20230504120631623.png) |
+| 损失         | ![image-20230504120645321](README\image-20230504120645321.png) |
+
+<br>
+
+# 4. 汽车聚类分析 Car Clustering Analysis
+
+<br>
+
+## Result
+
+K-Means 和 K-Mediods 对比：
+
+| K-Means                                                      | K-Mediods                                                    |
+| :----------------------------------------------------------: | :------------------------------------------------------------: |
+| ![image-20230511173029614](README/image-20230511173029614.png) | ![image-20230511173012045](README/image-20230511173012045.png) |
+
+<br>
+
+Agglomerative Clustering 对比：
+
+| **Single Linkage** | **![image-20230511173203047](README\image-20230511173203047.png)** |
+| :--------------------: | ------------------------------------------------------------ |
+| **Complete Linkage** | **![image-20230511173213021](README/image-20230511173213021.png)** |
+| **Average Linkage**  | ![image-20230511173224630](README/image-20230511173224630.png) |
+
+<br>
+
+聚类评价指标：
+
+|   聚类方法   |                           评价指标                           |
+| :----------: | :----------------------------------------------------------: |
+|   K-Means    | <img src="README/image-20230511185921466.png" alt="image-20230511185921466" style="zoom:70%;" /> |
+|  K-Mediods   | <img src="README/image-20230511185945085.png" alt="image-20230511185945085" style="zoom:70%;" /> |
+|  AHC 单连接  | <img src="README/image-20230511190153952.png" alt="image-20230511190153952" style="zoom: 70%;" /> |
+|  AHC 全连接  | <img src="README\image-20230511190207614.png" alt="image-20230511190207614" style="zoom: 70%;" /> |
+| AHC 平均连接 | <img src="README/image-20230511190323572.png" alt="image-20230511190323572" style="zoom: 70%;" /> |
+
+<br>
+
+汽车产品聚类分析
+
+| K-Means                                                      |
+| :------------------------------------------------------------: |
+| ![image-20230511191247229](README/image-20230511191247229.png) |
+| **K-Mediods**                                                |
+| ![image-20230511191220650](README/image-20230511191220650.png) |
+
