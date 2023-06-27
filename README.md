@@ -7,6 +7,22 @@
 
 <br>
 
+#### **目录  Index**
+
+1. [汽车里程数预测 Car Mileage Prediction](https://github.com/unicorn-yh/Deep-Learning-Mindspore#1-%E6%B1%BD%E8%BD%A6%E9%87%8C%E7%A8%8B%E6%95%B0%E9%A2%84%E6%B5%8B-car-mileage-prediction)
+
+2. [花卉图像分类 Flower Photos Classification](https://github.com/unicorn-yh/Deep-Learning-Mindspore#2-%E8%8A%B1%E5%8D%89%E5%9B%BE%E5%83%8F%E5%88%86%E7%B1%BB-flower-photos-classification)
+
+3. [基于MNIST全连接网络分类的梯度下降](https://github.com/unicorn-yh/Deep-Learning-Mindspore#3-%E5%9F%BA%E4%BA%8Emnist%E5%85%A8%E8%BF%9E%E6%8E%A5%E7%BD%91%E7%BB%9C%E5%88%86%E7%B1%BB%E7%9A%84%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D)
+
+4. [汽车聚类分析 Car Clustering Analysis](https://github.com/unicorn-yh/Deep-Learning-Mindspore#4-%E6%B1%BD%E8%BD%A6%E8%81%9A%E7%B1%BB%E5%88%86%E6%9E%90-car-clustering-analysis)
+
+5. [共享单车租车量预测 Bike Sharing Prediction](https://github.com/unicorn-yh/Deep-Learning-Mindspore#5-%E5%85%B1%E4%BA%AB%E5%8D%95%E8%BD%A6%E7%A7%9F%E8%BD%A6%E9%87%8F%E9%A2%84%E6%B5%8B-bike-sharing-prediction)
+
+   
+
+<br>
+
 # 1. 汽车里程数预测 Car Mileage Prediction
 
 ![image-20230402175403489](README/image-20230402175403489.png)
@@ -311,3 +327,18 @@ We used Linear Regression network as model to train the dataset, calculating MSE
 <h4 align="center">Table 13: Visualizing MAE and MSE graph</h4>
 
 <br>
+
+# 6. 天文数据挖掘
+
+## Result
+
+| 操作             | 结果                                                         |
+| :----------------: | :------------------------------------------------------------: |
+| 模型训练迭代过程 | ![image-20230623232315268](README/image-20230623232315268.png) |
+| 存储测试数据集标签的result.txt 文件 | ![image-20230623232507568](README/image-20230623232507568.png) |
+
+<br>
+
+# 7. 智慧交通预测
+
+## Result
